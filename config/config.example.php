@@ -110,7 +110,7 @@ return [
      */
     'page' => [
         'class' => PHPageBuilder\Page::class,
-        'table' => 'pages',
+        'table' => 'page_s',
         'translation' => [
             'class' => PHPageBuilder\PageTranslation::class,
             'table' => 'page_translations',

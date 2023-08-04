@@ -31,7 +31,7 @@ CREATE TABLE `page_translations` (
    PRIMARY KEY (`id`),
   UNIQUE (`page_id`,`locale`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-ALTER TABLE `page_translations` ADD FOREIGN KEY (`page_id`) REFERENCES `pages`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `page_translations` ADD FOREIGN KEY (`page_id`) REFERENCES `page_s`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 CREATE TABLE `uploads` (
   `id` int(11) NOT NULL auto_increment,
