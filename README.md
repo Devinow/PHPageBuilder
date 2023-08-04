@@ -53,7 +53,7 @@ If you want to quickly start a new project with drag and drop page management fu
 #### Add code with Composer
 If you are using Composer for managing PHP dependencies, you can simply run:
 ```
-composer require hansschouten/phpagebuilder
+composer require devinow/phpagebuilder
 ```
 
 Next, the PHPagebuilder can be initialised using the following PHP code:
