@@ -15,7 +15,7 @@ class Auth implements AuthContract
     {
         if (phpb_in_module('auth')) {
             if ($action === 'login' && isset($_POST['username']) && isset($_POST['password'])) {
-                if ($_POST['username'] === phpb_config('auth.username') && $_POST['password'] === phpb_config('auth.password')) {
+                if ($_POST['username'] === phpb_config('auth.username') && password_verify($_POST['password'],phpb_config('auth.password')) ) {
                     $_SESSION['phpb_logged_in'] = true;
                     phpb_redirect(phpb_url('website_manager'));
                 } else {
